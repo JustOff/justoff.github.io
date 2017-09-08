@@ -17,6 +17,13 @@ h1 {
     text-align: center;
 }
 
+h1 img {
+    vertical-align: bottom;
+    max-height: 22px;
+    margin-right: 2px;
+    border-radius: 20%;
+}
+
 h4 {
     font: 14px Georgia,serif;
     color: #505050;
@@ -24,6 +31,7 @@ h4 {
 }
 
 a {
+    font-style: normal;
     text-decoration: none;
     color: #447bc4;
 }
