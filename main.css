@@ -123,8 +123,8 @@ span.no-restart{
     color: #fff;
     display: inline-block;
     font: 700 8px/10px Arial;
-    margin: 4px 0 0 4px;
-    padding: 3px 6px;
+    margin: 4px 0 0 5px;
+    padding: 2px 4px;
     text-transform: uppercase;
     vertical-align: 3px;
 }
