@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<base target="_blank">
+<title>Pale Moon 28 translator's helper</title>
+<script>
+  function CrOpen(el) {
+    var e = document.getElementById("langcode");
+    var lcode = e.options[e.selectedIndex].value;
+    var url = "https://crowdin.com/translate/pale-moon/all/enus-" + lcode +"#q=" + el.text;
+    window.open(url);
+  }
+</script>
+</head>
+<body>
+<br><div style="width:800px; margin:0 auto;">
+Since a part of the translations for Pale Moon 28 on CrowdIn were pre-populated with language pack data from Firefox, they should be updated with the correct brand names and to be uniform in style. <a href="https://forum.palemoon.org/viewtopic.php?p=143887#p143887">Here are the details</a>.<br><br>
+
+Select your language:
+<select id="langcode">
+  <option value="ar">Arabic</option>
+  <option value="bg">Bulgarian</option>
+  <option value="zhcn">Chinese (Simplified)</option>
+  <option value="zhtw">Chinese (Traditional)</option>
+  <option value="hr">Croatian</option>
+  <option value="cs">Czech</option>
+  <option value="da">Danish</option>
+  <option value="nl">Dutch</option>
+  <option value="engb">English</option>
+  <option value="eo">Esperanto</option>
+  <option value="fi">Finnish</option>
+  <option value="tl">Filipino (Tagalog)</option>
+  <option value="fr">French</option>
+  <option value="gl">Galician</option>
+  <option value="de">German</option>
+  <option value="el">Greek</option>
+  <option value="hu">Hungarian</option>
+  <option value="id">Indonesian</option>
+  <option value="is">Icelandic</option>
+  <option value="it">Italian</option>
+  <option value="ja">Japanese</option>
+  <option value="kn">Kannada</option>
+  <option value="ko">Korean</option>
+  <option value="pl">Polish</option>
+  <option value="ptbr">Portuguese (Brazil)</option>
+  <option value="pt">Portuguese (Portugal)</option>
+  <option value="ro">Romanian</option>
+  <option value="ru">Russian</option>
+  <option value="sr">Serbian</option>
+  <option value="sk">Slovak</option>
+  <option value="sl">Slovenian</option>
+  <option value="esar">Spanish (Argentina)</option>
+  <option value="esmx">Spanish (Mexico)</option>
+  <option value="es">Spanish (Spain)</option>
+  <option value="sv">Swedish</option>
+  <option value="tr">Turkish</option>
+  <option value="uk">Ukrainian</option>
+  <option value="vi">Vietnamese</option>
+</select>
+
+<br><br>
+Strings with known branding issues (see comments on CrowdIn):
+<ol>
+  <li><a href="#" onclick="CrOpen(this);return false;">aboutDebugging.fullTitle</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">remoteHelp</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">marker.gcreason.description.DESTROY_RUNTIME</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">marker.gcreason.description.PERIODIC_FULL_GC</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">marker.gcreason.description.NSJSCONTEXT_DESTROY</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">marker.gcreason.description.SHUTDOWN_CC</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">marker.gcreason.description.FINISH_LARGE_EVALUATE</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">marker.gcreason.description.USER_INACTIVE</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">performanceUI.disabledRealTime.nonE10SBuild</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">performanceUI.disabledRealTime.disabledE10S</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">performanceUI.showPlatformData</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">performanceUI.showPlatformData.tooltiptext</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">category.other</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">responsive.remoteOnly</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">options.showPlatformData.label</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">options.showPlatformData.tooltip</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">error_runtimeVersionTooRecent</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">rights.intro-point2-a</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">rights.intro-point2.5</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">rights2.webservices-term1</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">rights.webservices-term7</a></li>
+</ol>
+
+New strings with <a href=https://developer.mozilla.org/en/docs/Localization_and_Plurals>plural forms</a>:
+<ol>
+  <li><a href="#" onclick="CrOpen(this);return false;">networkMenu.summary2</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">removeSelectedCookies.label</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">aboutReader.estimatedReadingTimeRange1</a></li>
+  <li><a href="#" onclick="CrOpen(this);return false;">aboutReader.estimatedReadTimeValue1</a></li>
+</ol>
+
+</div>
+</body></html>
