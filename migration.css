@@ -101,9 +101,20 @@ a {
     overflow: hidden;
     width: 50%;
     max-width: 370px;
-    border: 1px dotted #c9ddf2;
+    border-left: 1px dotted #c9ddf2;
+    border-top: 1px dotted #c9ddf2;
+    border-bottom: 1px dotted #c9ddf2;
     display: table-cell;
     padding: 4px 0 4px 38px;
+    vertical-align: top
+}
+
+.item .dl {
+    display: table-cell;
+    padding: 4px 0 4px 38px;
+    border-top: 1px dotted #c9ddf2;
+    border-bottom: 1px dotted #c9ddf2;
+    border-right: 1px dotted #c9ddf2;
     vertical-align: top
 }
 
